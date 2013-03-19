@@ -17,19 +17,24 @@ example of how to use the class
 	print json.dumps(c.formObject,separators=(',',':'),indent=4,sort_keys=True)
 
 
-It read the "gphoto2-config-input.log" witch is a example output of the command:
+The gphotoConfigVar is an example of the output from the shell command: 
+	gphoto2 --list-all-config
 
-/main/actions/autofocusdrive
-Label: Drive Nikon DSLR Autofocus
-Type: TOGGLE
-Current: 0
-/main/actions/manualfocusdrive
-Label: Drive Nikon DSLR Manual focus
-Type: RANGE
-Current: 0
-Bottom: -32767
-Top: 32767
-Step: 1
+
+It outputs a big list with the capabilities of the connected camera:
+In this example you will find "gphoto2-config-input.log", which is an output of my own camera.
+	/main/actions/autofocusdrive
+	Label: Drive Nikon DSLR Autofocus
+	Type: TOGGLE
+	Current: 0
+	/main/actions/manualfocusdrive
+	Label: Drive Nikon DSLR Manual focus
+	Type: RANGE
+	Current: 0
+	Bottom: -32767
+	Top: 32767
+	Step: 1
+
 
 json-output.data
 -------------------------
